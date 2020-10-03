@@ -16,6 +16,11 @@ body {
 		color: #7a92a5;
 		font-size: 14px;
 		margin: 12px 5px;
+		display: inline;
+		position: relative;
+	}
+	.markAs{
+		font-size: 14px;
 	}
 
 	header {
@@ -64,6 +69,8 @@ body {
 			&:hover {
 				box-shadow: 0 2px 6px 1px #a5a5a5;
 			}
+			
+
 
 			.generalData {
 				padding-top: 6px;
@@ -82,9 +89,132 @@ body {
 				text-align: end;
 				width: 30%;
 			}
+			
+			.collapsible {
+				background-color: #B0C4DE;
+				color: white;
+				cursor: pointer;
+				padding: 16px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 14px;
+			  }
+			  
+			  .active, .collapsible:hover {
+				background-color: #778899;
+			  }
+			  
+			  .content {
+				padding: 5px 18px;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+				background-color: #f1f1f1;
+				font-size: 14px;
+			  }
+
+			  
 
 		}
 	}
+
+	.custom-select {
+		position: relative;
+		font-family: Arial;
+		width:200px
+	  }
+	  
+	  .custom-select select {
+		display: none; /*hide original SELECT element:*/
+	  }
+	  
+	  .select-selected {
+		background-color: DodgerBlue;
+	  }
+	  
+	  /*style the arrow inside the select element:*/
+	  .select-selected:after {
+		position: absolute;
+		content: "";
+		top: 14px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 6px solid transparent;
+		border-color: #fff transparent transparent transparent;
+	  }
+	  
+	  /*point the arrow upwards when the select box is open (active):*/
+	  .select-selected.select-arrow-active:after {
+		border-color: transparent transparent #fff transparent;
+		top: 7px;
+	  }
+	  
+	  /*style the items (options), including the selected item:*/
+	  .select-items div,.select-selected {
+		color: #ffffff;
+		padding: 8px 16px;
+		border: 1px solid transparent;
+		border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		cursor: pointer;
+		user-select: none;
+	  }
+	  
+	  /*style items (options):*/
+	  .select-items {
+		position: absolute;
+		background-color: DodgerBlue;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 99;
+	  }
+	  
+	  /*hide the items when the select box is closed:*/
+	  .select-hide {
+		display: none;
+	  }
+	  
+	  .select-items div:hover, .same-as-selected {
+		background-color: rgba(0, 0, 0, 0.1);
+	  }
+	.center {
+		text-align: center;
+	}
+	  
+	.pagination {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	  
+	.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	}
+
+	.pagination a.active, pagination a {
+	background-color:  #6495ED;
+	color: white;
+	border: 1px solid #4CAF50;
+	}
+	
+	.pageItem{
+		display: inline;
+		background: #d9effd;
+
+	}
+	.pagination a:hover:not(.active) {background-color: #6495ED;
+	}
+
+
+
 
 	h4 {
 		font-size: 14px;
@@ -119,4 +249,5 @@ body {
 		font-weight: 500;
 		font-size: 12px;
 	}
+
 }

@@ -17,5 +17,11 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "react-js-pagination": "^3.0.3",
+    "react-paginate": "^6.5.0",
+    "react-show-more": "^2.0.0",
+    "react-truncate": "^2.4.0"
   }
 }

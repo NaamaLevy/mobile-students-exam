@@ -14,7 +14,12 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.1.2",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "react-truncate": "2.4.0",
+    "react-show-more": "^2.0.0",
+    "react-show-more-text": "1.4.4",
+    "use-data-api": "1.0.1"
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-show-more": "^2.0.2",
     "eslint": "^6.2.1",
     "eslint-config-standard": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
