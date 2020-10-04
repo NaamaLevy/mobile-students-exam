@@ -19,6 +19,7 @@
     "lerna": "^3.13.1"
   },
   "dependencies": {
+    "collections": "^5.1.12",
     "react-js-pagination": "^3.0.3",
     "react-paginate": "^6.5.0",
     "react-show-more": "^2.0.0",
